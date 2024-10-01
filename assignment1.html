@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <header class="section-navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="abelton-logo">
+            </div>
+            <nav class="navbar">
+                <div class="desktop-nav">
+                    <ul>
+                        <li class="nav-item">Live</li>
+                        <li class="nav-item">Push</li>
+                        <li class="nav-item">Note</li>
+                        <li class="nav-item">Link</li>
+                        <li class="nav-item">Shop</li>
+                        <li class="nav-item">Packs</li>
+                        <li class="nav-item">Help</li>
+                        <li class="nav-item more">More +</li>
+                    </ul>
+                </div>
+                <div class="desktop-nav2">
+                    <ul>
+                        <li class="nav-item2 bl">Try Live 12 for free</li>
+                        <li class="nav-item2">Log in or register</li>
+                    </ul>
+                </div>
+                <div class="mobile-nav">
+                    <button class="menu-btn">Menu</button>
+                    <ul class="mobile-menu">
+                        <li class="nav-item">Live</li>
+                        <li class="nav-item">Push</li>
+                        <li class="nav-item">Note</li>
+                        <li class="nav-item">Link</li>
+                        <li class="nav-item">Shop</li>
+                        <li class="nav-item">Packs</li>
+                        <li class="nav-item">Help</li>
+                        <li class="nav-item more">More +</li>
+                        <li class="nav-item2 bl">Try Live 12 for free</li>
+                        <li class="nav-item2">Log in or register</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="sub-navbar">
+        <div class="container2">
+            <ul>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>Apprenticeships</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <img src="homw.jpeg">
+    </div>
+
+    <script>
+    document.querySelector('.menu-btn').addEventListener('click', function() {
+    const menu = document.querySelector('.mobile-menu');
+    const sectionNavbar = document.querySelector('.section-navbar');
+    const menuItems = document.querySelectorAll('.mobile-menu li'); 
+    const menubtn = document.querySelector('.menu-btn')
+    menu.classList.toggle('active');
+
+    
+    if (menu.classList.contains('active')) {
+        menu.style.maxHeight = menu.scrollHeight + "px";
+        sectionNavbar.style.backgroundColor = "blue";
+        menubtn.style.color="white";
+        menuItems.forEach(function(item) {
+            item.style.color = "white";
+        });
+    } else {
+        menu.style.maxHeight = null;
+        sectionNavbar.style.backgroundColor = "";
+        menubtn.style.color="";
+        menuItems.forEach(function(item) {
+            item.style.color = "";
+        });
+    }
+});
+
+    </script>
+      
+</body>
+</html>

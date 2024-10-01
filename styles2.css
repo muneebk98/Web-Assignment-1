@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+
+
+body{
+    font-family: "Urbanist", sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    background-color: #fff;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h3{
+    font-size:30px;
+    color: #333;
+}
+h4{
+    color: #333;
+    font-size: 20px;
+}
+
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container{
+    padding: 12px;
+    margin: 8px 0;
+}
+
+input[type="file"] {
+    font-size: 16px;
+    border: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+a{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: #45a049;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    input[type="submit"], a {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea {
+        font-size: 12px;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+.container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 9.6rem 2.4rem;
+  }
+
+  table {
+    border: 1px solid black; 
+    border-collapse: collapse; 
+    width: 100%; 
+    table-layout: auto;
+}
+
+table td, table th {
+    padding: 10px; 
+}
+
+tr, td, th{ 
+    border: solid;
+    border-width: 1px 0;
+  }
+
+button{ 
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}
+
+#table-container {
+    overflow-x: auto; 
+}
+
+@media only screen and (max-width: 768px) {
+    table th, table td {
+        white-space: normal; 
+    }
+
+    button {
+        width: 100%; 
+    }
+}
